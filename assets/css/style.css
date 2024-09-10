@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-position: center; 
+   
+}
+.navbar-translucent {
+    background-color: rgba(255, 255, 255, 0.414);  
+}
+.navbar-translucent .nav {
+    display: flex;
+    align-items: center;
+}
+.brand-font {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9rem;
+    color: #82659D; 
+    margin-left: 30px;
+    text-shadow: 
+        1px 1px 0 #fff,  
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,  
+        -1px 1px 0 #fff;
+}
+  
+.item-home a,
+.item-productos a,
+.item-carrito a {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #9C8CB9;
+    text-shadow: 
+        1px 1px 0 #fff,  
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,  
+        -1px 1px 0 #fff; 
+}
+.nav-item {
+    margin: 0 0.9rem; 
+    display: flex;
+    align-items: center; 
+}
+.nav-link svg {
+    width: 24px; 
+    height: 24px; 
+    color: #9C8CB9; 
+    margin-top: -7px;
+}
+.nav-link svg path {
+    stroke: #9C8CB9; 
+    stroke-width: 0.5; 
+}
+.card {
+    position: relative;
+    width: 1300px; 
+    height: 500px; 
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.644); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    overflow: hidden;
+}
+
+.card-content {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 10rem;
+    color: #9C8CB9; 
+    text-shadow: 
+        1px 1px 0 #fff,  
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,  
+        -1px 1px 0 #fff;
+    
+}
+
+.card-image {
+    position: absolute;
+    bottom: -70px;
+    right: 10px;
+    overflow: hidden;
+}
+
+.card-image img {
+    max-width: 50%;
+    height: auto; 
+    margin-left: 700px;
+    
+}
+.card-footer {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-card {
+    width: 300px;
+    position: relative;
+    margin: 50px auto;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 83%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; 
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px; 
+    padding: 5px; 
+    background: #f0f0f0;
+}
+
+.product-tumb img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.product-details {
+    flex-grow: 1; 
+    padding: 20px; 
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: normal; 
+}
+
+.product-catagory {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 10px; 
+}
+
+.product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+.product-details h4 a:hover {
+    color: #9C8CB9;
+}
+
+.product-details p {
+    font-size: 14px; 
+    line-height: 20px;
+    margin-bottom: 10px; 
+    color: #999;
+    word-wrap: break-word; 
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #9C8CB9;
+    font-weight: 600;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #e1e1e1;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #9C8CB9;
+}
+
+.boton {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #9C8CB9;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #82659D;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5px 0;
+}
+
+#confirmar-cantidad{
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #9C8CB9;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.alerta-cierre{
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#carrito {
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.carrito-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 900px;
+    max-height: 600px;
+    margin: 0 auto;
+
+}
+
+#carrito strong{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.carrito-card-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.carrito-header {
+    margin-bottom: 10px;
+}
+
+.carrito-col {
+    text-align: center;
+    padding: 5px;
+}
+
+.carrito-items {
+    margin-top: 10px;
+}
+
+
+.carrito-total {
+    margin-top: 100px;
+    margin-left: 700px;
+    margin-bottom: 5px;
+}
+
+
+#finalizar-compra {
+    background-color: #82659D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 330px;
+}
+
+#finalizar-compra:hover {
+    background-color: #82659D;
+}
