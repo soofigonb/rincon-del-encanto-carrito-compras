@@ -1,4 +1,4 @@
-Rincón del Encanto - Carrito de Compras
+## Rincón del Encanto - Carrito de Compras
 
 ## Descripción del Proyecto
 Este proyecto es una práctica de consolidacion del Módulo 3 del  Bootcamp de Desarrollo de 
